@@ -8,8 +8,12 @@
         <link rel="stylesheet" href="style.css" media="all">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script src="jquery.easy-rollover.js"></script>
         <script>
           $(function(){
+             // 通常
+             $('.rollover').easyRollover();
+
              // #で始まるアンカーをクリックした場合に処理
              $('a[href^=#]').click(function() {
                 // スクロールの速度
@@ -31,12 +35,12 @@
     <header role="banner">
       <h1 id="logo"><a href="/"><img src="img/logo.png" alt="D2D(Dev&amp;Design Draft)" width="394" height="97"></a></h1>
       <nav role="navigation">
-        <ul><li><a href="#activity">活動紹介</a></li><li><a href="#about">D2Dとは</a></li><li class="nav_external"><a href="https://d2draft.doorkeeper.jp/events#upcoming-events" title="外部サイト:イベント一覧">イベント一覧</a></li><li><a href="#contact">お問合せ</a></li></ul>
+        <ul><li><a href="#activity">活動紹介</a></li><li><a href="#about">D2Dとは</a></li><li class="nav_external"><a href="https://d2draft.doorkeeper.jp/events#upcoming-events" title="イベント一覧サイト">イベント一覧</a></li><li><a href="#contact">お問合せ</a></li></ul>
       </nav>
     </header>
     <figure>
       <img src="img/mainvisual.jpg" alt="写真:勉強会の様子" width="1280" height="458">
-      <figcaption><p>気になること、本当に知りたいこと。</p><p>ここにあり&#x303C;<span class="not_appeared">ます</span>。</p></figcaption>
+      <figcaption><p>気になること、本当に知りたいこと。</p><p>ここにあり<span aria-hidden="true">&#x303C;</span><span class="not_appeared">ます</span>。</p></figcaption>
     </figure>
     <main role="main">
       <section id="activity" tabindex="0">
@@ -54,11 +58,11 @@
         <h3>関連記事</h3>
           <dl>
             <dt>2015年5月7日</dt>
-            <dd><a href="http://codingmania.net/blog/%E7%AC%AC5%E5%9B%9E-d2d-%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B7%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3%E5%8B%89%E5%BC%B7%E4%BC%9A%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A">第5回 D2D アクセシビリティ勉強会振り返り<img class="externallink" alt="外部サイト:CodingMania" src="img/icon_external.png"></a></dd>
+            <dd><a href="http://codingmania.net/blog/%E7%AC%AC5%E5%9B%9E-d2d-%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B7%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3%E5%8B%89%E5%BC%B7%E4%BC%9A%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A">第5回 D2D アクセシビリティ勉強会振り返り<img class="externallink" alt="CodingManiaサイト" src="img/icon_external.png"></a></dd>
             <dt>2015年5月21日</dt>
-            <dd><a href="http://www.pictron.net/2015/06/10/d2d-%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3-%E3%82%A2%E3%83%B3%E3%82%AB%E3%83%B3%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9-vol-1-%E3%83%92%E3%82%A2%E3%83%AA%E3%83%B3/">D2D ディレクション アンカンファレンス vol.1 ヒアリング<img class="externallink" alt="外部サイト:pictron web planning" src="img/icon_external.png"></a></dd>
+            <dd><a href="http://www.pictron.net/2015/06/10/d2d-%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3-%E3%82%A2%E3%83%B3%E3%82%AB%E3%83%B3%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9-vol-1-%E3%83%92%E3%82%A2%E3%83%AA%E3%83%B3/">D2D ディレクション アンカンファレンス vol.1 ヒアリング<img class="externallink" alt="pictron web planningサイト" src="img/icon_external.png"></a></dd>
             <dt>2015年6月26日</dt>
-            <dd><a href="http://white-stage.com/article.php/d2daccessibility6nd">第6回 D2D アクセシビリティ勉強会でアクセシブルなフォームを作成！<img class="externallink" alt="外部サイト:White Stage" src="img/icon_external.png"></a></dd>
+            <dd><a href="http://white-stage.com/article.php/d2daccessibility6nd">第6回 D2D アクセシビリティ勉強会でアクセシブルなフォームを作成！<img class="externallink" alt="White Stageサイト" src="img/icon_external.png"></a></dd>
           </dl>
         </div>
       </div>
@@ -103,8 +107,8 @@
     </main>
     <footer>
       <ul>
-        <li class="fb"><a href="https://www.facebook.com/groups/192199647655920/" title="外部サイト:D2DのFacebookグループページ"><img src="img/icon_facebook.png" alt="外部サイト:D2DのFacebookグループページ" width="38" height="39"></a></li>
-        <li class="tt"><a href="https://twitter.com/search?q=%23d2draft&amp;src=typd&amp;lang=ja" title="外部サイト:D2Dのtwitterでのツイート一覧"><img src="img/icon_twitter.png" alt="外部サイト:D2Dのtwitterでのツイート一覧" width="38" height="39"></a></li>
+        <li class="fb"><a href="https://www.facebook.com/groups/192199647655920/"><img src="img/icon_facebook_out.png" alt="D2DのFacebookグループページ" class="rollover" width="38" height="39"></a></li>
+        <li class="tt"><a href="https://twitter.com/search?q=%23d2draft&amp;src=typd&amp;lang=ja"><img src="img/icon_twitter_out.png" alt="D2Dのtwitterでのツイート一覧" class="rollover" width="38" height="39"></a></li>
       </ul>
       <small>&copy; D2DRAFT. All Rights Reserved.</small>
     </footer>
