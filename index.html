@@ -7,13 +7,25 @@
         <title>D2D(Dev&amp;Design Draft)</title>
         <link rel="stylesheet" href="style.css" media="all">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-        <script src="jquery.easy-rollover.js"></script>
-        <script>
-          $(function(){
-             // 通常
-             $('.rollover').easyRollover();
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+             $('a:has(img[src*="_f."])').each(function() {
+                var a = $(this);
+                var img = a.find('img');
+                var src_off = img.attr('src');
+                var src_on = src_off.replace('_f.', '_h.');
+                $('<img />').attr('src', src_on);
+                a.bind('mouseover focus', function() {
+                        img.attr('src', src_on);
+                });
+                a.bind('mouseleave blur', function() {
+                        img.attr('src', src_off);
+                });
+             });
+          });
 
+          $(function(){
              // #で始まるアンカーをクリックした場合に処理
              $('a[href^=#]').click(function() {
                 // スクロールの速度
@@ -107,8 +119,8 @@
     </main>
     <footer>
       <ul>
-        <li class="fb"><a href="https://www.facebook.com/groups/192199647655920/"><img src="img/icon_facebook_out.png" alt="D2DのFacebookグループページ" class="rollover" width="38" height="39"></a></li>
-        <li class="tt"><a href="https://twitter.com/search?q=%23d2draft&amp;src=typd&amp;lang=ja"><img src="img/icon_twitter_out.png" alt="D2Dのtwitterでのツイート一覧" class="rollover" width="38" height="39"></a></li>
+        <li class="fb"><a href="https://www.facebook.com/groups/192199647655920/"><img src="img/icon_facebook_f.png" alt="D2DのFacebookグループページ" class="rollover" width="38" height="39"></a></li>
+        <li class="tt"><a href="https://twitter.com/search?q=%23d2draft&amp;src=typd&amp;lang=ja"><img src="img/icon_twitter_f.png" alt="D2Dのtwitterでのツイート一覧" class="rollover" width="38" height="39"></a></li>
       </ul>
       <small>&copy; D2DRAFT. All Rights Reserved.</small>
     </footer>
