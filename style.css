@@ -25,7 +25,8 @@ a:link, a:visited {
 }
 
 a:hover, a:focus {
-	background: #e3f5db;
+	background: #54b032;
+	color: #ffffff;
 }
 
 input, textarea {
@@ -107,6 +108,7 @@ nav ul li a:link, nav ul li a:visited {
 	background: #000000 url("img/arrow_under.gif") no-repeat 50% 80%;
 	text-decoration: none;
 	color: #ffffff;
+	letter-spacing: 3px;
 }
 
 nav ul li.nav_external a:link, nav ul li.nav_external a:visited {
@@ -132,6 +134,10 @@ nav ul li:first-child a {
 nav ul li:last-child a {
 	margin-right: 0;
 	border-top-right-radius: 10px;
+}
+
+nav ul li.nav_external img {
+	vertical-align: middle;
 }
 
 figure {
@@ -197,6 +203,7 @@ h2 {
 	text-align: center;
 	font-size: 320%;
 	font-weight: 100;
+	letter-spacing: 5px;
 }
 
 h3 {
@@ -238,7 +245,7 @@ form {
 	margin-top: 34px;
 	margin-bottom: 97px;
 	padding: 15px 44px 15px 28px;
-	background: #000000 url("img/arrow_right.gif") no-repeat 94% 50%;
+	background: #000000 url("img/arrow_right.gif") no-repeat 87% 50%;
 	border-top-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	text-decoration: none;
@@ -248,7 +255,7 @@ form {
 }
 
 .more a:hover, .more a:focus {
-	background: #4d4d4d url("img/arrow_right.gif") no-repeat 94% 50%;
+	background: #4d4d4d url("img/arrow_right.gif") no-repeat 87% 50%;
 }
 
 .more a:focus {
@@ -258,34 +265,39 @@ form {
 .concretely {
 	clear: both;
 	margin: 57px auto 75px;
-	padding-top: 24px;
-	width: 666px;
-	background: url("img/bg_concretely_t.png") no-repeat top left;
-	font-size: 120%;
 	font-weight: bold;
-}
-
-.concretely:hover, .concretely:focus {
-	background: url("img/bg_concretely_t_h.png") no-repeat top left;
 }
 
 .concretely a {
 	display: block;
-	padding: 0 230px 38px;
-	width: 667px;
-	background: url("img/bg_concretely_b.png") no-repeat bottom left;
+	margin: 0 auto;
+	padding-top: 13px;
+	width: 665px;
+	background: url("img/bg_concretely_t.png") no-repeat top left;
 	line-height: 1.3;
 	text-decoration: none;
-	font-size: 118%;
+	font-size: 145%;
 	color: #000000;
 }
 
 .concretely a:hover, .concretely a:focus {
+	background: url("img/bg_concretely_t_h.png") no-repeat top left;
+}
+
+.concretely span {
+	display: block;
+	padding: 5px 226px 35px;
+	width: 665px;
+	background: url("img/bg_concretely_b.png") no-repeat bottom left;
+}
+
+.concretely a:hover span, .concretely a:focus span {
 	background: url("img/bg_concretely_b_h.png") no-repeat bottom left;
 }
 
 .centered h3 {
 	text-align: center;
+	letter-spacing: 3px;
 }
 
 dl {
@@ -357,9 +369,9 @@ textarea {
 input[type='submit'] {
 	display: block;
 	margin: 0 auto;
-	padding: 15px 19px;
+	padding: 15px 44px 15px 28px;
 	width: auto;
-	background: #000000 url("img/arrow_right.gif") no-repeat 94% 50%;
+	background: #000000 url("img/arrow_right.gif") no-repeat 87% 50%;
 	border-top-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	color: #ffffff;
@@ -370,7 +382,7 @@ input[type='submit'] {
 }
 
 input[type='submit']:hover, input[type='submit']:focus {
-	background: #4d4d4d url("img/arrow_right.gif") no-repeat 94% 50%;
+	background: #4d4d4d url("img/arrow_right.gif") no-repeat 87% 50%;
 	outline: 1px dotted #000000;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4) inset, 0 0 8px rgba(67, 67, 71, 0.6);
 }
@@ -383,6 +395,10 @@ footer {
 footer li {
 	margin-right:11px;
 	margin-bottom: 14px;
+}
+
+footer img {
+	display: block;
 }
 
 footer .fb a:hover img, footer .tt a:hover img, footer .fb a:focus img, footer .tt a:focus img {
@@ -490,22 +506,23 @@ footer small {
 		width: 290px;
 	}
 
-	.concretely {
+	 .concretely a {
+		padding-top: 18px; 
 		width: 280px;
 		background: url("img/bg_concretely_t_s.png") no-repeat top left;
 	}
 
-	 .concretely a {
-		padding: 0 22px 28px; 
+	.concretely a:hover, .concretely a:focus {
+		background: url("img/bg_concretely_t_s_h.png") no-repeat top left;
+	}
+
+	.concretely span {
+		padding: 0 22px 28px;
 		width: 280px;
 		background: url("img/bg_concretely_b_s.png") no-repeat bottom left;
 	}
 
-	.concretely:hover, .concretely:focus {
-		background: url("img/bg_concretely_t_s_h.png") no-repeat top left;
-	}
-
-	 .concretely a:hover, .concretely a:focus {
+	 .concretely a:hover span, .concretely a:focus span {
 		background: url("img/bg_concretely_b_s_h.png") no-repeat bottom left;
 	}
 
