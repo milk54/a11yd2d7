@@ -286,9 +286,11 @@ form {
 
 .concretely span {
 	display: block;
-	padding: 5px 226px 35px;
+	padding: 5px 209px 35px;
 	width: 665px;
 	background: url("img/bg_concretely_b.png") no-repeat bottom left;
+	text-shadow: 1px 1px 0 #000000;
+	letter-spacing: 2px;
 }
 
 .concretely a:hover span, .concretely a:focus span {
@@ -510,6 +512,7 @@ footer small {
 		padding-top: 18px; 
 		width: 280px;
 		background: url("img/bg_concretely_t_s.png") no-repeat top left;
+		font-size: 140%;
 	}
 
 	.concretely a:hover, .concretely a:focus {
@@ -517,9 +520,10 @@ footer small {
 	}
 
 	.concretely span {
-		padding: 0 22px 28px;
+		padding: 0 22px 28px 31px;
 		width: 280px;
 		background: url("img/bg_concretely_b_s.png") no-repeat bottom left;
+		letter-spacing: 0;
 	}
 
 	 .concretely a:hover span, .concretely a:focus span {
