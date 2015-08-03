@@ -286,11 +286,9 @@ form {
 
 .concretely span {
 	display: block;
-	padding: 5px 209px 35px;
+	padding: 5px 226px 35px;
 	width: 665px;
 	background: url("img/bg_concretely_b.png") no-repeat bottom left;
-	text-shadow: 1px 1px 0 #000000;
-	letter-spacing: 2px;
 }
 
 .concretely a:hover span, .concretely a:focus span {
