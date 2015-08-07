@@ -545,3 +545,18 @@ footer small {
 	}
 
 }
+
+/* for max-width 480px */
+
+@media only screen and (max-width: 480px) {
+
+	figure figcaption p {
+		width: 110px;
+		font-size: 75%;
+	}
+
+	figure figcaption p:first-child {
+		width: 228px;
+	}
+
+}
