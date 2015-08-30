@@ -231,14 +231,13 @@ form {
 }
 
 #activity img.photo_workshop {
-	position: absolute;
-	top: 140px;
-	left: 0;
+	float: left;
+	margin-left: -348px;
+	margin-top: -70px;
 }
 
 .float_r {
 	float: right;
-	margin-top: -5px;
 	width: 60%;
 	text-align: left;
 }
