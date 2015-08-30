@@ -198,7 +198,7 @@ h1 {
 h2 {
 	margin: 0 auto 38px;
 	padding-bottom: 17px;
-	width: 290px;
+	width: 5.7em;
 	background: #ffffff url("img/underline.gif") repeat-x left bottom;
 	text-align: center;
 	font-size: 320%;
@@ -227,7 +227,6 @@ form {
 	position: absolute;
 	top: 140px;
 	left: 0;
-	width: 33%;
 }
 
 .float_r {
